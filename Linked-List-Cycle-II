@@ -1,0 +1,18 @@
+
+ 
+Class Solution {
+public:
+    ListNode *detectCycle(ListNode *head) {
+        set<ListNode*> uniqueNodes;
+        int pos = 0;
+        ListNode* cur = head;
+        while (cur != NULL) {
+            if (uniqueNodes.find(cur) != uniqueNodes.end()) {
+                return cur;
+            }
+            uniqueNodes.insert(cur);
+            cur = cur->next;
+        }
+        return NULL;
+    }
+};
