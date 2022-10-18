@@ -1,32 +1,37 @@
+// Online C++ Compiler - Build, Compile and Run your C++ programs online in your favorite browser
+
 #include<iostream>
+
+using namespace std;
 class printNumber{
 
-	void printNum(int maxNum){
+    public: void printNum(int maxNum){
      
-		for (i =0; i<=maxNum; i++){  
-			int j =i;
-			while(j){
-				if (j =! i){
-					cout << j <<',' 
-					j --;
-				}
-				else{
-					
-					cout << j <<endl
-					
-				}
+		for (int i =1; i<=maxNum; i++){  
+			for (int j=1; j<=i; j++){  
+			            
+			     if(i == j){
+			         cout << j <<endl ;
+			         
+			     }
+			     else{
+			         
+			         cout << j << ',' ;
+			         
+			     }
 		        
 			}
 	  
 		}
-  
-	}
+    }
+	
 
-}
+};
+int main()
+{
 
-
-void main(){
     printNumber obj1;
-	obj1.printNum(5)
+	obj1.printNum(5);
 
+    return 0;
 }
