@@ -14,9 +14,13 @@ Question 4: Find if a number is power of 2. {n =4 yes; n =8 yes;  n=13 no } retu
 
 Question 5: Create a linked list from input
 User input:
+
 What do you want to do?
+
 a Add to link list.
+
 p Print link list
+
 q quit
 
 Input  a 1,  a 5, a 6, a -4, a 9, p, q Output  5 -> 6 -> -4 -> 9
